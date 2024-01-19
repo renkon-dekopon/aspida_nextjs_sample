@@ -8,6 +8,7 @@ export default function Home() {
     query: {
       status: ["available"]
     }
+    // headersのauthorization bearerに渡したい場合は、別途ラップして使い回す
   })
   return (
     data?.map((item, index) => {
